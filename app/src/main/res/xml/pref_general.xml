@@ -1,0 +1,22 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="notification"
+        android:summary="@string/pref_description_notification"
+        android:title="@string/pref_title_notif" />
+    <Preference android:title="Privacy Policy">
+        <intent
+            android:targetClass="com.hafiizh.japanesestation.ui.activity.PrivacyPolicy"
+            android:targetPackage="com.hafiizh.japanesestation" />
+    </Preference>
+    <Preference android:title="Terms of Use">
+        <intent
+            android:targetClass="com.hafiizh.japanesestation.ui.activity.TermsOfUse"
+            android:targetPackage="com.hafiizh.japanesestation" />
+    </Preference>
+    <Preference android:title="Disclaimer">
+        <intent
+            android:targetClass="com.hafiizh.japanesestation.ui.activity.Disclaimer"
+            android:targetPackage="com.hafiizh.japanesestation" />
+    </Preference>
+</PreferenceScreen>

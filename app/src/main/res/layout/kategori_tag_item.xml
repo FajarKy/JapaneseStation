@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="kategori_tag"
+            type="com.hafiizh.japanesestation.data.local.entity.KategoriTagEntity" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/posts_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:url="@{kategori_tag.image}" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/posts_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{kategori_tag.title}"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/posts_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{kategori_tag.date}" />
+        </LinearLayout>
+    </RelativeLayout>
+</layout>
